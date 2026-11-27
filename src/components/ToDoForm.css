@@ -1,0 +1,38 @@
+/* Add task form */
+.todo-form {
+  display: flex;
+  gap: 50px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e6e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(32, 36, 58, 0.04);
+}
+
+.todo-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #d9dce7;
+  border-radius: 9px;
+  outline: none;
+}
+
+.todo-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.todo-form button {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-form button {
+    width: 100%;
+  }
+}
